@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ART OF THE LIGHT</title>
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+</head>
+
+<body>
+
+    <script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  window.location.href = "loginform.html";
+}
+</script>
+
+    <div class="card-container">
+        <div class="card">
+            <img src="primage.jpg">
+            <div class="card-content">
+                <h3>Personal Reflection</h3>
+                <p>Share meaningful reflections about faith.</p>
+                <a href="personalreflection.html" class="btn">Open</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="communitygathering.jpg">
+            <div class="card-content">
+                <h3>Community Service</h3>
+                <p>Promoting kindness throuh service and advocy.
+                </p>
+                <a href="communityservice.html" class="btn">Open</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="inspire.jpg">
+            <div class="card-content">
+                <h3>Inspirational Portfolio</h3>
+                <p>Showcacasing works, values and goals. 
+                </p>
+                <a href="inspirational.html" class="btn">Open</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="educ.jpg">
+            <div class="card-content">
+                <h3>Educational Ethics</h3>
+                <p>Learn moral and ethical digital practices.</p>
+                <a href="educational.html" class="btn">Open</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="faithwithtech.jpg">
+            <div class="card-content">
+                <h3>Faith & Technology</h3>
+                <p>Show how teach can spread positivity and light.</p>
+                <a href="faithwithtech.html" class="btn">Open</a>
+            </div>
+        </div>
+
+    </div>
+
+<a href="homepage.html" class="logout-btn">Logout</a>
+
+</body>
+</html>

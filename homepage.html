@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ART OF THE LIGHT</title>
+
+    <link href='https://cdn.boxicons.com/3.0.4/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url(spirtualityimage.jpg) no-repeat center/cover;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background: rgba(0,0,0,0.5);
+            color: white;
+        }
+
+        .navbar .title {
+            font-size: 20px;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 60px;
+        }
+
+        .content {
+            width: 50%;
+            color: rgb(237, 232, 232);
+        }
+
+        .content h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .content .button {
+            display: inline-block;
+            text-decoration: none;
+            padding: 14px 40px;
+            color: rgb(7, 7, 7);
+            background-image: linear-gradient(45deg, rgb(231, 232, 225), rgb(45, 41, 45));
+            font-size: 20px;
+            border-radius: 30px;
+            border-top-right-radius: 0;
+            margin-left: 3%;
+            transition: .3s;
+        }
+
+        content.button:hover {
+            scale: .8;
+        }
+
+        .wrapper {
+            width: 420px;
+            background: rgba(255,255,255,0.2);
+            border: 2px solid gray;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 0 10px black;
+            color: black;
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+
+        .wrapper h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 45px;
+            background: transparent;
+            border: 2px solid black;
+            border-radius: 30px;
+            padding-left: 15px;
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .remember-forgot a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .login-btn {
+            width: 100%;
+            height: 45px;
+            background: black;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        .register-link a {
+            text-decoration: none;
+            font-weight: bold;
+            color: black;
+        }
+
+        .demo-credentials {
+            margin-top: 20px;
+            padding: 12px;
+            border-top: 1px solid #555;
+            text-align: center;
+            font-size: 13px;
+            color: black;
+        }
+
+        .demo-credentials span {
+            font-weight: bold;
+            background: rgba(0,0,0,0.1);
+            padding: 2px 6px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <h1 class="title">Una ang Ginoo | Light of the World</h1>
+        <ul class="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">REVIEW</a></li>
+        </ul>
+    </nav>
+
+    <div class="main">
+
+        <div class="content">
+            <h1>Welcome to<br>Una ang Ginoo</h1>
+            <p>
+                This site is created to honor God and to share insights that uplift the heart and strengthen our character. 
+                Giving inspiration to others, to remind them tp grow in faith, deepen their values, and recognize God's presence 
+                in every part of life. Let shine God's light and remind others that when He comes first, everything will finds 
+                it's rightful place.
+            </p>
+            <a href="registerform.html" class="button">Join Now</a>
+            <a href="#" class="button">Learn More</a>
+        </div>
+
+        <div class="wrapper">
+            <form id="loginForm">
+                <h1>Login</h1>
+
+                <div class="input-box">
+                    <input type="text" id="username" placeholder="Username" required>
+                    <i class='bxr bx-user-square'></i>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="Password" required>
+                    <i class='bxr bx-lock-keyhole'></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="login-btn">Login</button>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="registerform.html">Register</a></p>
+                </div>
+
+                <div class="demo-credentials">
+                    <p><strong>Demo Account</strong></p>
+                    <p>Username: <span>yourname</span></p>
+                    <p>Password: <span>1234567890</span></p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script>
+
+    const loginForm = document.getElementById("loginForm");
+
+
+    loginForm.addEventListener("submit", function(event) {
+        event.preventDefault(); 
+
+        let username = document.getElementById("username").value;
+        let password = document.getElementById("password").value;
+
+        if (username === "yourname" && password === "1234567890") {
+            alert("Login successful! Welcome 🙂");
+            localStorage.setItem("loggedIn", "true");
+
+            setTimeout(() => {
+                window.location.href = "mainpage.html";
+            }, 100);
+        } else {
+            alert("Invalid username or password");
+        }
+    });
+</script>
+
+</script>
+</body>
+</html>
